@@ -29,7 +29,7 @@ namespace Kamaitachi {
     }
     if (!infile.eof())
     {
-      std::cerr << "Fooey!\n";
+      std::cerr << "Error!\n";
     }
   }
   template<class T>
@@ -51,6 +51,14 @@ namespace Kamaitachi {
       column.push_back(m_dataMatrix[i][j]);
     }
     return column;
+  }
+  template<class T>
+  int DataFile<T>::Rows() const{
+    return m_dataMatrix.size();
+  }
+  template<class T>
+  int DataFile<T>::Cols() const {
+    return m_dataMatrix.back().size();
   }
 }
 

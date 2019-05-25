@@ -25,6 +25,12 @@
     <Filter Include="Archivos de origen\utils">
       <UniqueIdentifier>{b9aaa46d-a8d2-433a-9c3d-dde245950b72}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\math">
+      <UniqueIdentifier>{14364461-74db-4924-9863-6cb689e77b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\math">
+      <UniqueIdentifier>{dfb277f0-033a-4b1f-85b6-ac0c95183ce6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\kt_regression.cpp">
@@ -33,16 +39,28 @@
     <ClCompile Include="source\kt_data_io.cpp">
       <Filter>Archivos de origen\utils</Filter>
     </ClCompile>
+    <ClCompile Include="source\kt_matrix.cpp">
+      <Filter>Archivos de origen\math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\kt_vector.cpp">
+      <Filter>Archivos de origen\math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\kt_statistics.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="include\kt_regression.h">
       <Filter>Archivos de encabezado\trainers</Filter>
     </ClInclude>
     <ClInclude Include="include\kt_data_io.h">
       <Filter>Archivos de encabezado\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kt_matrix.h">
+      <Filter>Archivos de encabezado\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kt_vector.h">
+      <Filter>Archivos de encabezado\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kt_statistics.h">
+      <Filter>Archivos de encabezado\math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

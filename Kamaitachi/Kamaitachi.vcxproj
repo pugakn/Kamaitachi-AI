@@ -72,25 +72,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)/lib/$(PlatformShortName)</OutDir>
-    <IntDir>$(SolutionDir)/intermediate/$(PlatformShortName)</IntDir>
+    <OutDir>$(SolutionDir)/lib/$(PlatformShortName)/</OutDir>
+    <IntDir>$(SolutionDir)/intermediate/$(PlatformShortName)/$(ProjectName)/</IntDir>
     <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)/lib/$(PlatformShortName)</OutDir>
-    <IntDir>$(SolutionDir)/intermediate/$(PlatformShortName)</IntDir>
+    <OutDir>$(SolutionDir)/lib/$(PlatformShortName)/</OutDir>
+    <IntDir>$(SolutionDir)/intermediate/$(PlatformShortName)/$(ProjectName)/</IntDir>
     <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)/lib/$(PlatformShortName)</OutDir>
-    <IntDir>$(SolutionDir)/intermediate/$(PlatformShortName)</IntDir>
+    <OutDir>$(SolutionDir)/lib/$(PlatformShortName)/</OutDir>
+    <IntDir>$(SolutionDir)/intermediate/$(PlatformShortName)/$(ProjectName)/</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)/lib/$(PlatformShortName)</OutDir>
-    <IntDir>$(SolutionDir)/intermediate/$(PlatformShortName)</IntDir>
+    <OutDir>$(SolutionDir)/lib/$(PlatformShortName)/</OutDir>
+    <IntDir>$(SolutionDir)/intermediate/$(PlatformShortName)/$(ProjectName)/</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -166,12 +166,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="source\kt_data_io.cpp" />
+    <ClCompile Include="source\kt_matrix.cpp" />
     <ClCompile Include="source\kt_regression.cpp" />
+    <ClCompile Include="source\kt_vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\kt_data_io.h" />
+    <ClInclude Include="include\kt_matrix.h" />
     <ClInclude Include="include\kt_regression.h" />
     <ClInclude Include="include\kt_statistics.h" />
+    <ClInclude Include="include\kt_vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
